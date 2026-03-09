@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header class="site-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo">Riya<span>.</span></a>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-title">Riya Sonkusre</h1>
+                    <h2 class="hero-subtitle">Full-Stack Web Developer</h2>
+                    <p class="hero-description">
+                        I design and build modern, high-performance websites and web applications
+                        that help businesses grow online. Passionate about clean code, intuitive UI,
+                        and creating seamless digital experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                        <button class="btn btn-secondary" id="hireMeBtn">Hire Me</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="media/riyaimg2.jpeg" alt="Riya Sharma - Web Developer">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== STATS SECTION ========== -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Awards Won</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FEATURED SERVICES ========== -->
+        <section class="section featured-services">
+            <div class="container">
+                <h2 class="section-title">What I Do</h2>
+                <p class="section-subtitle">I offer a wide range of web development services tailored to your needs.</p>
+                <div class="services-preview-grid">
+                    <article class="service-card">
+                        <div class="service-icon">&#9782;</div>
+                        <h3>Web Design</h3>
+                        <p>Creating visually stunning, user-centered designs that capture your brand identity and engage visitors.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">&#9000;</div>
+                        <h3>Web Development</h3>
+                        <p>Building fast, scalable, and secure websites using the latest technologies and best practices.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">&#9743;</div>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring your website looks and works flawlessly on every device, from mobile to desktop.</p>
+                    </article>
+                </div>
+                <div class="center-btn">
+                    <a href="services.html" class="btn btn-primary">All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA SECTION ========== -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <h2>Have a project in mind?</h2>
+                <p>Let's work together to bring your ideas to life with beautiful, functional websites.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Riya<span>.</span></a>
+                <p>Building digital experiences that make a difference. Based in Mumbai, working worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>riya.sharma@email.com</p>
+                <p>+91 98765 43210</p>
+                <p>Mumbai, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2025 Riya Sharma. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========== HIRE ME MODAL ========== -->
+    <div class="modal-overlay" id="hireModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2>Let's Work Together!</h2>
+            <p>I'm currently available for freelance projects and full-time opportunities. Reach out and let's discuss how I can help bring your vision to life.</p>
+            <div class="modal-details">
+                <p><strong>Email:</strong> riya.sharma@email.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Availability:</strong> Within 48 hours</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Go to Contact Page</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
